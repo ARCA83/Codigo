@@ -43,7 +43,7 @@ git commit -n "comentario"
 
 
 ```bash
-git commit log 
+git log 
 ```
 
 * Para poder ver el detalle del commit 
