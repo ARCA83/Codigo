@@ -37,7 +37,7 @@ git add .
 * Crear el registro de los cambios realizados
 
 ```bash
-git commit -n "comentario" 
+git commit -m "comentario" 
 ```
 * Poder ver historial de commits
 
