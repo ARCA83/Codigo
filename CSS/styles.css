@@ -1,0 +1,40 @@
+/* Selectores */
+/* selector de elemento */
+h1{
+    color:greenyellow;
+    background-color: beige;
+    text-align:center;
+    font-size: 20px;
+}
+#div_temas {
+    display: none !important;
+}
+.product_cell{
+    border: 2px solid rgb(17, 0, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+.laptop > h2{
+    color:blue  
+}
+.laptop> h3{
+    color: cadetblue;
+    text-align: right;
+    padding-right: 10px;
+
+}
+.celular> h2{
+    color:red;
+}
+.celular> h3{
+    color: rgb(131, 54, 219);
+}
+.audifono >h2{
+    color:green;
+    text-align: center;
+}
+.audifono >h3{
+    color:aqua;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr Validation</title>
+</head>
+<body>
+    <form action="">
+        <label for="">
+            Nombre
+        <input name ="name" value="Sebastian" type="text" minlength="3" maxlength="10" required disabled>
+        </label>  
+        <br>
+        <label for="">
+            Apellido
+            <input name="lastname" type="text" required>
+        </label>
+        <br>
+        <label for="">
+            Correo
+            <input name="email" type="email" required>
+        </label>
+        <br>
+        <label for="">
+            Edad
+            <input name="age" type="number" min="18" max="36" required>
+        </label>
+        <br>
+        <label for="">
+            Pasword
+            <input name="password" type="pasword" required>
+        </label>
+        <br>
+        <select name="country" id="">
+            <option value="">Selecciona tu pais</option>
+            <option value="">Peru</option>
+            <option value="">Chile</option>
+            <option value="">Argentina</option>
+            <option value="">Ecuador</option>
+        </select>
+        <button> Enviar </button>
+            
+    </form>
+    
+    
+</body>
+</html>

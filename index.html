@@ -3,17 +3,25 @@
         <title>
             Inicio
         </title>
+        
+        <!-- <style>
+            #div_temas{
+                display: none;
+            }
+        </style> -->
+    <link rel="stylesheet" href="./css/styles.css"> 
     </head>
     <body>
-        <div style="width: 1080px; margin: 10px auto;">
+        <div style="width: 900px; margin: 10px auto;">
             <header>
                 <!-- Ctrl+}(atajo para comentario windows)-->
                 <!-- Heading 1 -->
                 <h1>Apple.com</h1>
-                <p>Productos top:</p>
+                <p style="text-align:center; color: black">Productos top:</p>
             </header>
             <main>
-                <div>
+                <!-- style="display:none;" -->
+                <div id="div_temas">
                     <h4> Temas </h4>
                     <ul>
                         <li>
@@ -28,38 +36,73 @@
                     <tr>
                         <td>
                             <!-- style="border-bottom: 1px solid;" -->
-                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin:20px">
+                            <div div class="product_cell celular" >
                                     <h2>  iPhone 13</h2>
+                                    <h3>  $ 800</h3>
                                     <img width="250px" alt="Fotos de un iPhones 13 silver " src="https://www.elgrupoinformatico.com/static/Noticias/2022/08/iphone-13-pro-1200x675.jpg">
                             </div>
                         </td>
                         <td>
-                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px;margin:20px">
+                            <div div class="product_cell laptop">
                                 <h2> Macbook Pro</h2>
+                                <h3> $ 1299</h3>
                                 <img width="220px" alt="Foto de un Macbook Pro" src="https://es.digitaltrends.com/wp-content/uploads/2022/03/macbook-pro-m1.jpg?fit=720%2C720&p=1">
                             </div>
                         </td>
                         <td>
-                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin:20px">
+                            <div div class="product_cell audifono">
                                 <h2> Airpods Pro</h2>
+                                <h3> $ 159</h3>
                                 <img width="200px" alt="Foto de un Airpods Pro blanco" src="https://ripleype.imgix.net/https%3A%2F%2Fgamecentersac.com%2Fwp-content%2Fuploads%2F2021%2F11%2FGC01635.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=0a8c3eb82484fca9eb83ac1b0d092d12">
                             </div>
                         </td>
-                        <td>
-                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin:20px">
-                                <h2> iPad Air</h2>
-                                <img width="150px"alt="iPad Air" src="https://i.linio.com/p/38769da41a1469e1c3d06e1e4dbf82dd-product.webp">
-                           </div>
-                        </td>
-                    </tr>
+                        </tr>
                 </table>
-            </main>
-            <fotter>
-                <p style="text-align: center;">Hecho con cariño por Código</p>
-            </fotter>
-           
-        </div>
+              </main>
+              <main>
+                <!-- style="display:none;" -->
+                <div id="div_temas">
+                    <h4> Temas </h4>
+                    <ul>
+                        <li>
+                            <a href="./formulario.html">Formularios</a>
+                        </li>
+                        <li>
+                            <a href="./tablas.html">Tablas</a>
+                        </li>
+                    </ul>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <!-- style="border-bottom: 1px solid;" -->
+                            <div div class="product_cell celular">
+                                    <h2>  iPhone 14</h2>
+                                    <h3>  $ 1200</h3>
+                                    <img width="250px" alt="Fotos de un iPhones 13 silver " src="https://images.unsplash.com/photo-1653921167679-7676ed531a58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lJTIwMTR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product_cell laptop">
+                                <h2> Macbook Air</h2>
+                                <h3> $ 999</h3>
 
-                     
-    </body>
-</html>
+                                <img width="220px" alt="Foto de un Macbook Pro" src="https://images.unsplash.com/photo-1522169799806-79cb544552bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80">
+                            </div>
+                        </td>
+                        <td>
+                            <div div class="product_cell audifono">
+                                <h2> Airpods Max</h2>
+                                <h3> $ 259</h3>
+                                <img width="200px" alt="Foto de un Airpods Pro blanco" src="https://images.unsplash.com/photo-1612116454817-2b0841e30eaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=944&q=80">
+                            </div>
+                        </td>
+                        </tr>
+                </table>
+              </main>
+              <footer>
+                <p style="text-align: center">Hecho con cariño por Código</p>
+              </footer>
+            </div>
+          </body>
+        </html>
