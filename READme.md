@@ -46,4 +46,16 @@ git commit -m "comentario"
 git log 
 ```
 
-* Para poder ver el detalle del commit 
+*Poder ver historial de commits
+
+[ ] Git log retorna un id con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
+```bash
+git log
+```
+*Para poder ver el detalle del commit usamos
+```bash
+git show id-de-commit
+```
+```bash
+git push origin main
+```
