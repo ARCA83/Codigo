@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSFLEX PRAC</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box {
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        .box div{
+            width: 300px;
+            background: red;
+        }
+        .box div:nth-child(even){
+            background: yellowgreen;
+        }
+        .box2{
+            display: flex;
+            width: 400px;
+        }
+        .box2 div{
+            background: yellow;
+            width: 50px;
+        }
+        .box2 div:first-child{
+            background: red;
+            flex-grow: 1;
+        }
+        .box2 div:last-child{
+            background: red;
+            flex-grow: 2;
+        }
+        .shrink{
+            display: flex;
+            width: 400px;
+        }
+        .shrink div{
+            background: yellow;
+            width: 200px;
+        }
+        .shrink div:first-child{
+            background: red;
+            flex-shrink: 1;
+        }
+        .shrink div:last-child{
+            background: red;
+            flex-shrink: 1;
+        }
+        .justife{
+            display: flex;
+            justify-content: space-between;
+        }
+        .justife div {
+            background: red;
+         }
+        .justife div:nth-child(even){
+            background: yellow;
+        }
+        .wrap{                  
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 50vh; 
+        }
+        .wrap div {
+            background:red; 
+            width: 300px;
+         }
+        .wrap div:nth-child(even){
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    </div>
+    <p>
+    </p>
+    <div class="box2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+    <p>
+    </p>
+    <div class="shrink">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+    <p>
+    </p>
+    <div class="justife
+    ">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+    <p>
+    </p>
+    <div class="wrap">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+</body>
+</html>

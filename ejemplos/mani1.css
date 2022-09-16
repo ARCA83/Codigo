@@ -1,0 +1,44 @@
+h1{
+    color:red;
+}
+
+h2 {
+    font-weight:bold;
+    color:aquamarine;
+}
+.subtitulo { color:blue;
+}
+#subtitulo2 {
+    color:rgb(165, 42, 126);
+}
+[href] {
+    color: rgb(0, 255, 145);
+}
+
+[href="https://www.youtube.com/"] {
+    color:red;
+}
+
+[href="https://twitter.com/"] {
+    color:rgb(4, 0, 255);
+}
+[href="https://www.facebook.com/"] {
+    color:rgb(94, 93, 201);
+}
+input[disabled] {
+    background-color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+input:focus {
+    background-color: red;
+}
+
+ul li:nth-child(2){
+    color: rgb(237, 162, 100)
+}
