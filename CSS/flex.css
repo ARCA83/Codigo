@@ -1,0 +1,36 @@
+/* (*) significa el todo */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+.padre{
+    display: flex;
+    /* respeta el ancho de la antalla  */
+    /* justify content alinear elementos al lado */
+    height: 100vh;
+    /* flex-start */
+    /* center */
+    /* flex-end:derecho */
+    /* space-between: envia los elementos de extremo a extremo */
+    /* space-around: envia los elementos de extremo a extremo pero espacio a los lados */
+    /* space-evely: envia los elementos de extremo espacio elementos iguales */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: propiedad alinear los elementos verticalmente y comparte las prpiedades justifycenter */
+    align-items: center;
+}
+.hijo{
+    width: 25%;
+    height: 100px;
+    border: solid 5px green;
+    background-color: white;
+}
