@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 body{
+    height: 600px;
+   
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
     font-size: 18px;
     color: hsl(0, 0%, 100%);
+    display: flex;
+    
+    justify-content: center;
+    
+    
 }
 main{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 .containers{
@@ -22,27 +29,24 @@ main{
     flex-direction: column;
     background-color: hsl(216, 50%, 16%);
     border-radius: 20px;
-    padding: 25px;
+    
 }
 .top-image{
     position: relative;
     cursor: pointer;
+    padding: 10px;
+
 }
 #equilib{
     width: 100%;
     border-radius: 15px;
     transition: 0.3s;
+    padding: 15px;
 }
 #eye{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    border-radius: 20px;
-    width: 100%;
-    height: 98.8%;
-    background-color:hsla(178, 100%, 50%, 0.468);
-    opacity: 0;
+    width: 298px;
+    height: 298px;
+    display: none;
 }
 #eye::hover{
     opacity: 1;
@@ -50,11 +54,13 @@ main{
 
 .text1 .text-cardbody >h2{
     font-weight: 600;
+    display: flex;
+    justify-content: center;
     letter-spacing: 0.75px;
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.3s;
-    gap: 200;
+    
 }
 .text1 .text-cardbody >h2:hover{
     color: hsl(178, 100%, 50%);
