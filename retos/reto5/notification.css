@@ -62,7 +62,7 @@ h1 {
     padding: 10px;
     display: grid;
     grid-template-areas:
-    "avatar content";
+    "avatar content chess";
     grid-template-columns: 15% auto;
     gap: 10px;
 }
@@ -75,6 +75,7 @@ h1 {
     width: 80%;
     margin: 0px auto;
 }
+
 .main .card .content {
     grid-area: 'content';
 }
@@ -97,6 +98,16 @@ h1 {
 .strong2{
     font-weight: 900;
     color: blue;
+}
+.comentary{
+    border: 1px solid rgb(209, 232, 235);
+    padding: 15px;
+    background-color: none;
+    height: auto;
+    width: fit-content;
+}
+.main .card .chess {
+    grid-area: chess;
 }
 
 @media (min-width: 600px) {
