@@ -133,3 +133,15 @@ function crearPersonasClass() {
 
 	console.log(personas);
 }
+function crearPersonasCustom(){
+    
+    const Name =prompt("Name: ");
+    const Age =prompt("Age: ");
+    const Gender =prompt("Gender: ");
+    const Height =prompt("Height: ")
+    const persona = new Person(Name,Age, Gender, Height);
+    
+    personas.push(persona);
+
+    console.log(personas)
+}
