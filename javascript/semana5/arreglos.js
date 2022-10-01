@@ -84,8 +84,8 @@ for (let j = 0; j < numeros.length; j++) {
     break;
   }
 }
-console.log("Foreach numeros");
-numeros.forEach(function (numero,i) {
+console.log("ForEach numeros");
+numeros.forEach(function (numero) {
   console.log(numero); // 10, 11, 12, 13, 14, 15
   if (numero > 13) {
     // Es basicamente para romper una funcion, este caso estamos rompinedo al for
