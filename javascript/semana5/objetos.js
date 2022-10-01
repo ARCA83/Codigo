@@ -138,10 +138,22 @@ function crearPersonasCustom(){
     const Name =prompt("Name: ");
     const Age =prompt("Age: ");
     const Gender =prompt("Gender: ");
-    const Height =prompt("Height: ")
-    const persona = new Person(Name,Age, Gender, Height);
-    
+    const Height =prompt("Height: ");
+    const persona = new Person(Name, Age, Gender, Height);
+    // ingresar nueva persona al arreglo "personas"
     personas.push(persona);
+    console.log(personas);
 
-    console.log(personas)
+}
+function notificacion(){
+    window.alert( "Soy una notificacion");
+    console .log(window.location.host);
+    console .log(window.location.pathname);
+    console .log(window.innerHeight);
+    console .log(window.innerWidth);
+    
+    window.open("variable.html","variablesTab","popup");
+}
+function goVariables(){
+    window.location.href = "variables.html";
 }
