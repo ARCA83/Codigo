@@ -28,8 +28,7 @@ function readPokemons(pokemons) {
   container.innerHTML = "";
   pokemons.forEach((pokemon, index) => {
     container.innerHTML += `<div class="card">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-          index + 1
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1
         }.png" alt="" />
         <h4>${pokemon.name}</h4>
         <p>
