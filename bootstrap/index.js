@@ -1,0 +1,1 @@
+const listPlayer = document.querySelector("")
