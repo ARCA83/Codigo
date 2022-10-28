@@ -112,3 +112,7 @@ function App() {
   
 }
 ```
+## Sweet Alert
+Es una libreria que nos permite mostrar alertas en nuestra aplicacion
+
+###
