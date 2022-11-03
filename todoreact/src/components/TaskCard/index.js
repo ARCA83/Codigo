@@ -8,7 +8,7 @@ function TaskCard(props) {
 						✓
 					</a>
 				</span>
-				<span>{task.text}</span>
+				<span>{task.name}</span>
 			</div>
 			<hr className="border border-muted border-1" />
 			<div className="d-flex justify-content-between">
