@@ -1,4 +1,4 @@
-const url = "https://6363105c66f75177ea3c9310.mockapi.io/tareas";
+const url = "https://6363106266f75177ea3c93be.mockapi.io/tareas";
 
 // GET : Listar
 // POST: Crear
