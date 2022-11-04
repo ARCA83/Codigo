@@ -1,17 +1,19 @@
-//paso 1 import our component from react Router DOM
-import {BrowserRouter, Routes,Route}from "react-router-dom";
-//paso 2: Import our views
-import { HomeView } from "../pages";
+// Paso1: Importar los componentes de React Router DOM
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Pas2: Importar nuestras vistas
+import { HomeView, ProfileView } from "../pages";
 
-// path => es la raiz /./ login/ registro
+// path => Nombre de la ruta /, /login, /registro
 
-const Router = ()=>{
-    return (
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomeView/>} />
-        </Routes>
-        </BrowserRouter>
-    );
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/perfil" element={<ProfileView />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
+
 export default Router;

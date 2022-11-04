@@ -48,18 +48,20 @@ export const update = async (id, body) => {
   }
 };
 
-// Para la eliminar un registro unicamente necesito el id
-export const destroy = async (id) => {
-  try {
-    const response = await fetch(`${url}/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-};
+//para eliminar un registro unicam
+export const destroy = async (id)=> {
+try{
+  const response = await fetch(`${url}/${id}`,{
+    method:"DELETE",
+    headers: {
+      "Content-type":"application/json",
+    }
+
+  });
+  const data =await response.json();
+  return data;
+}catch(error){
+  console.log(error);
+}
+
+}
