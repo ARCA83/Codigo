@@ -11,7 +11,7 @@ function UserInformation(props) {
       <div className="image-container">
         <img width="100" src={user?.avatar_url} alt="" />
       </div>
-      <div className="description-container">
+      <div className="description-container"> 
         <div className="user-date-container">
           {/* Solo actua si es que name existe en user */}
           <h2>{user.name}</h2>

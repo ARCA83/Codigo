@@ -23,22 +23,19 @@ const Profile = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-dark text-white" >
       {user && (
         <div className="text-center">
-          <img
-            src={user.avatar_url}
-              
-            className="rounded-circle"
-            width={300}
-            alt=""
-          />
+          <div className="image-container">
+            <img className="rounded-circle border border-white"  width="400" src={user?.avatar_url} alt="" />
+          </div>
           <a href={user.blog}>
             <h1 className="mt-4">{user.name}</h1>
           </a>
           <p className="mt-3 fw-bold">{user.bio}</p>
           <h3>Tareas Pendientes: {tasks.created}</h3>
           <h3>Tareas Terminadas: {tasks.done}</h3>
+          <h3>Followers: {user.followers}</h3>
         </div>
       )}
     </div>
