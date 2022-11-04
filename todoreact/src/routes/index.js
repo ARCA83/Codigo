@@ -1,5 +1,5 @@
 //paso 1 import our component from react Router DOM
-import {BrowserRouter, Routers,Route}from "react-router-dom";
+import {BrowserRouter, Routes,Route}from "react-router-dom";
 //paso 2: Import our views
 import { HomeView } from "../pages";
 
@@ -8,10 +8,10 @@ import { HomeView } from "../pages";
 const Router = ()=>{
     return (
         <BrowserRouter>
-        <Route>
+        <Routes>
             <Route path="/" element={<HomeView/>} />
-        </Route>
+        </Routes>
         </BrowserRouter>
     );
 };
-export default Router
+export default Router;
