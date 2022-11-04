@@ -4,6 +4,15 @@ const url = "https://6363106266f75177ea3c93be.mockapi.io/tareas";
 // POST: Crear
 // PUT: Actualizar
 // DELETE: Eliminar
+export const getProfile = async () => {
+  try {
+    const response = await fetch("https://api.github.com/users/ARCA83");
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log("Error", error);
+  }
+};
 
 export const get = async () => {
   try {
@@ -48,20 +57,18 @@ export const update = async (id, body) => {
   }
 };
 
-//para eliminar un registro unicam
-export const destroy = async (id)=> {
-try{
-  const response = await fetch(`${url}/${id}`,{
-    method:"DELETE",
-    headers: {
-      "Content-type":"application/json",
-    }
-
-  });
-  const data =await response.json();
-  return data;
-}catch(error){
-  console.log(error);
-}
-
-}
+// Para la eliminar un registro unicamente necesito el id
+export const destroy = async (id) => {
+  try {
+    const response = await fetch(`${url}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
