@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TaskForm, TaskCard } from "../../components";
 import { get, post, update } from "../../services";
-import { TaskModel } from "../../models/TaskModel";
+import { TaskModel } from "../../models/Taskmodel";
 
 function Home() {
 	const [taskList, setTaskList] = useState([]);
