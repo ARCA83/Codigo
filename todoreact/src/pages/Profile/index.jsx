@@ -2,9 +2,9 @@ import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { getProfile } from "../../services";
 
-
 const Profile = () => {
   const { user: userContext } = useContext(AuthContext);
+
   const [user, setUser] = useState(null);
 
   const fetchUser = async () => {
@@ -14,7 +14,7 @@ const Profile = () => {
       ...response,
       ...userContext,
     });
-  }; 
+  };
 
   useEffect(() => {
     fetchUser();
@@ -37,8 +37,8 @@ const Profile = () => {
               <div className="row d-flex">
                 <div className="col-12 mb-5 text-center">
                   <img
-                    src={user?.avatar_url}
-                    className="rounded-circle border border-dark"
+                    src={user.avatar_url}
+                    className="rounded-circle"
                     width={100}
                     alt=""
                   />
@@ -48,7 +48,7 @@ const Profile = () => {
                   <input
                     type="text"
                     className="form-control"
-                    value={user?.name}
+                    value={user.name}
                   />
                 </div>
                 <div className="col-6">
@@ -56,7 +56,7 @@ const Profile = () => {
                   <input
                     type="text"
                     className="form-control"
-                    value={user?.login}
+                    value={user.login}
                   />
                 </div>
                 <div className="col-12 mt-3">
@@ -71,7 +71,7 @@ const Profile = () => {
                   <label htmlFor="">Bio</label>
                   <input
                     type="text"
-                    value={user?.bio}
+                    value={user.bio}
                     className="form-control"
                   />
                 </div>
@@ -80,7 +80,7 @@ const Profile = () => {
                   <input
                     type="text"
                     className="form-control"
-                    value={user?.blog}
+                    value={user.blog}
                   />
                 </div>
                 <div className="col-6 mt-3">
@@ -88,7 +88,7 @@ const Profile = () => {
                   <input
                     type="text"
                     className="form-control"
-                    value={user?.location}
+                    value={user.location}
                   />
                 </div>
                 <div className="col-6 mt-3">
@@ -96,7 +96,7 @@ const Profile = () => {
                   <input
                     type="text"
                     className="form-control"
-                    value={user?.company}
+                    value={user.company}
                   />
                 </div>
                 <div className="col-6 mt-3">
@@ -112,7 +112,7 @@ const Profile = () => {
                   <input
                     type="password"
                     className="form-control"
-                    value={user?.password}
+                    value={user.password}
                   />
                 </div>
                 <div className="col-12 mt-3 d-flex gap-2">

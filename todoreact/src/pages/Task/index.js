@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useParams, useNavigate } from "react-router-dom";
 import { TaskDetail } from "../../components";
-import { TaskModel } from "../../models/Taskmodel";
+import { TaskModel } from "../../models/TaskModel";
 import { getById } from "../../services";
 
 function Task() {

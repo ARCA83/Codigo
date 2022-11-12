@@ -15,7 +15,7 @@ export const AuthProvider = (props) => {
 
   function login(email, password) {
     // aca vamos a comparar con un usuario fake
-    if (email !== "indergley@gmail.com" || password !== "1adfadfad") return false;
+    if (email !== "linder@gmail.com" || password !== "123456") return false;
 
     const user = { email, password };
     localStorage.setItem("user", JSON.stringify(user));

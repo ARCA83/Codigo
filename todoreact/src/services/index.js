@@ -1,17 +1,18 @@
-const url = "https://6363106266f75177ea3c93be.mockapi.io/tareas";
+const url = "https://63659f46046eddf1baf09724.mockapi.io/tasks";
+const urlUsers = "https://63659f46046eddf1baf09724.mockapi.io/users";
 
 // GET : Listar
 // POST: Crear
 // PUT: Actualizar
 // DELETE: Eliminar
 export const getProfile = async () => {
-  try {
-    const response = await fetch("https://api.github.com/users/ARCA83");
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error", error);
-  }
+	try {
+		const response = await fetch("https://api.github.com/users/linder3hs");
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.log("Error", error);
+	}
 };
 
 export const get = async () => {
@@ -56,6 +57,22 @@ export const post = async (body) => {
 	}
 };
 
+export const postUser = async (user) => {
+	try {
+		const response = await fetch(urlUsers, {
+			method: "POST",
+			headers: {
+				"Content-type": "application/json",
+			},
+			body: JSON.stringify(user),
+		});
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
 // id: Tarea
 export const update = async (id, body) => {
 	try {
@@ -88,3 +105,4 @@ export const destroy = async (id) => {
 		console.log(error);
 	}
 };
+	

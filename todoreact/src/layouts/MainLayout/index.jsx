@@ -9,7 +9,7 @@ const MainLayout = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-dark bg-dark  ">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
