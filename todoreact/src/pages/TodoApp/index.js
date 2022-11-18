@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
 
 import {
 	Container,
@@ -16,8 +16,10 @@ import ClearIcon from "@mui/icons-material/Clear";
 
 import { post } from "../../services";
 import { TaskModel } from "../../models/TaskModel";
+import { AuthContext } from "../../context/AuthContext";
 
 function TodoApp() {
+	const { user } = useContext(AuthContext);
 	const [inputButtons, setInputButtons] = useState(true);
 	const inputElement = useRef();
 
@@ -30,15 +32,22 @@ function TodoApp() {
 	};
 
 	const handleInputKeyPress = (event) => {
-		if (event.key == "Enter") {
+		if (event.key === "Enter") {
 			addTask();
 		}
 	};
 
 	const addTask = async () => {
 		if (inputElement.current.value === "") return;
-		const newtask = new TaskModel(null, inputElement.current.value);
-		await post(newtask);
+		const newTask = new TaskModel(
+			null,
+			inputElement.current.value,
+			null,
+			null,
+			null,
+			user.id
+		);
+		await post(newTask);
 		inputElement.current.value = "";
 	};
 
