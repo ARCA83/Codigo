@@ -1,5 +1,5 @@
 const url = "https://63659f46046eddf1baf09724.mockapi.io/tasks";
-const urlUsers = "https://63659f46046eddf1baf09724.mockapi.io/users";
+const urlUsers = "https://63659f46046eddf1baf09724.mockapi.io/users ";
 const urlBooks = "https://www.googleapis.com/books/v1/volumes?q=";
 
 export const getBooks = async (search) => {
@@ -18,7 +18,7 @@ export const getBooks = async (search) => {
 // DELETE: Eliminar
 export const getProfile = async () => {
   try {
-    const response = await fetch("https://api.github.com/users/linder3hs");
+    const response = await fetch("https://api.github.com/users/ARCA83");
     const data = await response.json();
     return data;
   } catch (error) {
